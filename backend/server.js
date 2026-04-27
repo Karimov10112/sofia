@@ -14,7 +14,9 @@ const server = http.createServer(app);
 const PORT = process.env.PORT || 5000;
 
 // ─── Socket.io ───────────────────────────────────────────────────────────────
-socketConfig.init(server);
+if (!process.env.VERCEL) {
+  socketConfig.init(server);
+}
 
 // ─── Database ────────────────────────────────────────────────────────────────
 mongoose
