@@ -20,11 +20,13 @@ if (!process.env.VERCEL) {
 
 // ─── Database ────────────────────────────────────────────────────────────────
 mongoose
-  .connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/sofia-shop')
+  .connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/sofia-shop', {
+    serverSelectionTimeoutMS: 5000, // 5 seconds timeout
+  })
   .then(() => console.log('✅ MongoDB connected'))
   .catch((err) => {
     console.error('❌ MongoDB connection error:', err.message);
-    console.log('⚠️  Running without database — auth features limited');
+    console.log('⚠️  Running without database — using mock data');
   });
 
 // ─── Middleware ───────────────────────────────────────────────────────────────
