@@ -84,12 +84,13 @@ export const AuthPage: React.FC = () => {
     setError('');
 
     try {
+      const baseUrl = window.location.hostname === 'localhost' ? 'http://localhost:5002' : '';
       const endpoint = isLogin ? '/api/auth/login' : '/api/auth/register';
       const body = isLogin
         ? { email: formData.email, password: formData.password }
         : { name: formData.name, email: formData.email, password: formData.password };
 
-      const res = await fetch(`http://localhost:5002${endpoint}`, {
+      const res = await fetch(`${baseUrl}${endpoint}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body),
@@ -114,8 +115,8 @@ export const AuthPage: React.FC = () => {
           }
         }
       }
-    } catch {
-      setError(language === 'uz' ? 'Server bilan bog\'lanib bo\'lmadi' : language === 'ru' ? 'Не удалось подключиться к серверu' : 'Could not connect to server');
+    } catch (err: any) {
+      setError((language === 'uz' ? 'Server bilan bog\'lanib bo\'lmadi: ' : 'Could not connect to server: ') + err.message);
     } finally {
       setLoading(false);
     }
@@ -123,8 +124,9 @@ export const AuthPage: React.FC = () => {
 
   const handleGoogleLogin = () => {
     setGoogleLoading(true);
+    const baseUrl = window.location.hostname === 'localhost' ? 'http://localhost:5002' : '';
     // Redirect to backend Google OAuth
-    window.location.href = 'http://localhost:5002/api/auth/google';
+    window.location.href = `${baseUrl}/api/auth/google`;
   };
 
   const handleVerifyOtp = async (e: React.FormEvent) => {
@@ -137,7 +139,8 @@ export const AuthPage: React.FC = () => {
     setError('');
     
     try {
-      const res = await fetch('http://localhost:5002/api/auth/verify-email', {
+      const baseUrl = window.location.hostname === 'localhost' ? 'http://localhost:5002' : '';
+      const res = await fetch(`${baseUrl}/api/auth/verify-email`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: registeredEmail, otp }),
