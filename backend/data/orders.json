@@ -1,0 +1,245 @@
+[
+  {
+    "userId": "950jlf61j",
+    "items": [
+      {
+        "id": "b3",
+        "name": "Sofia Glow Foundation",
+        "category": "beauty",
+        "subcategory": "Makeup",
+        "brand": "Sofia",
+        "price": 189000,
+        "oldPrice": 250000,
+        "discount": 24,
+        "rating": 4.7,
+        "reviews": 189,
+        "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=500&q=80",
+        "images": [
+          "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&q=80",
+          "https://images.unsplash.com/photo-1631730486572-226d1f595b68?w=800&q=80"
+        ],
+        "description": "Full coverage foundation with natural glow finish. SPF 30 protection and 24-hour wear.",
+        "specs": {
+          "Volume": "30ml",
+          "Coverage": "Full",
+          "Finish": "Natural Glow",
+          "SPF": "30"
+        },
+        "inStock": true,
+        "quantity": 1
+      }
+    ],
+    "deliveryInfo": {
+      "name": "Azamatjon",
+      "phone": "+998938852241",
+      "address": "bodomzor",
+      "city": "yunsobod",
+      "region": ""
+    },
+    "paymentMethod": "payme",
+    "total": 189000,
+    "status": "cancelled",
+    "_id": "8aun7gcrl",
+    "createdAt": "2026-04-27T13:00:45.692Z",
+    "updatedAt": "2026-04-27T13:28:07.901Z"
+  },
+  {
+    "userId": "950jlf61j",
+    "items": [
+      {
+        "id": "b3",
+        "name": "Sofia Glow Foundation",
+        "category": "beauty",
+        "subcategory": "Makeup",
+        "brand": "Sofia",
+        "price": 189000,
+        "oldPrice": 250000,
+        "discount": 24,
+        "rating": 4.7,
+        "reviews": 189,
+        "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=500&q=80",
+        "images": [
+          "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&q=80",
+          "https://images.unsplash.com/photo-1631730486572-226d1f595b68?w=800&q=80"
+        ],
+        "description": "Full coverage foundation with natural glow finish. SPF 30 protection and 24-hour wear.",
+        "specs": {
+          "Volume": "30ml",
+          "Coverage": "Full",
+          "Finish": "Natural Glow",
+          "SPF": "30"
+        },
+        "inStock": true,
+        "quantity": 1
+      }
+    ],
+    "deliveryInfo": {
+      "name": "Azamatjon",
+      "phone": "+998938852241",
+      "address": "bodomzor",
+      "city": "yunsobod",
+      "region": ""
+    },
+    "paymentMethod": "payme",
+    "total": 189000,
+    "status": "cancelled",
+    "_id": "ymujmn26b",
+    "createdAt": "2026-04-27T13:00:48.442Z",
+    "updatedAt": "2026-04-27T13:28:04.320Z"
+  },
+  {
+    "userId": "950jlf61j",
+    "items": [
+      {
+        "id": "b3",
+        "name": "Sofia Glow Foundation",
+        "category": "beauty",
+        "subcategory": "Makeup",
+        "brand": "Sofia",
+        "price": 189000,
+        "oldPrice": 250000,
+        "discount": 24,
+        "rating": 4.7,
+        "reviews": 189,
+        "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=500&q=80",
+        "images": [
+          "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&q=80",
+          "https://images.unsplash.com/photo-1631730486572-226d1f595b68?w=800&q=80"
+        ],
+        "description": "Full coverage foundation with natural glow finish. SPF 30 protection and 24-hour wear.",
+        "specs": {
+          "Volume": "30ml",
+          "Coverage": "Full",
+          "Finish": "Natural Glow",
+          "SPF": "30"
+        },
+        "inStock": true,
+        "quantity": 1
+      }
+    ],
+    "deliveryInfo": {
+      "name": "Azamatjon",
+      "phone": "+998938852241",
+      "address": "bodomzor",
+      "city": "yunsobod",
+      "region": ""
+    },
+    "paymentMethod": "payme",
+    "total": 189000,
+    "status": "cancelled",
+    "_id": "ldk6512fa",
+    "createdAt": "2026-04-27T13:02:29.545Z",
+    "updatedAt": "2026-04-27T13:03:49.799Z"
+  },
+  {
+    "userId": "950jlf61j",
+    "items": [
+      {
+        "id": "s1",
+        "name": "iPhone 15 Pro Max",
+        "category": "smartphone",
+        "subcategory": "Premium",
+        "brand": "Apple",
+        "price": 15900000,
+        "oldPrice": 17500000,
+        "discount": 9,
+        "rating": 4.9,
+        "reviews": 892,
+        "image": "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=500&q=80",
+        "images": [
+          "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=800&q=80",
+          "https://images.unsplash.com/photo-1695048064523-501a67d0cfa8?w=800&q=80",
+          "https://images.unsplash.com/photo-1695048065001-5c93d51c0a02?w=800&q=80"
+        ],
+        "description": "The ultimate iPhone with titanium design, A17 Pro chip, and advanced camera system.",
+        "colors": [
+          "#1f1f1f",
+          "#f5f5f0",
+          "#4a4a4a",
+          "#2d4b73"
+        ],
+        "storage": [
+          "256GB",
+          "512GB",
+          "1TB"
+        ],
+        "specs": {
+          "Display": "6.7\" Super Retina XDR",
+          "Chip": "A17 Pro",
+          "Camera": "48MP + 12MP + 12MP",
+          "Battery": "29 Hours Video",
+          "Material": "Titanium"
+        },
+        "inStock": true,
+        "isBestseller": true,
+        "quantity": 1
+      }
+    ],
+    "deliveryInfo": {
+      "name": "Azamatjon",
+      "phone": "+998938852241",
+      "address": "108a, Bodomzor Street, Badamzar, Yunusabad district, Toshkent, 100000, Oʻzbekiston",
+      "city": "Toshkent",
+      "region": ""
+    },
+    "paymentMethod": "payme",
+    "total": 15900000,
+    "status": "shipped",
+    "_id": "dl6thhfpo",
+    "createdAt": "2026-04-27T13:20:23.410Z",
+    "updatedAt": "2026-04-27T13:21:10.893Z"
+  },
+  {
+    "userId": "950jlf61j",
+    "items": [
+      {
+        "id": "b2",
+        "name": "Sofia Matte Lipstick",
+        "category": "beauty",
+        "subcategory": "Makeup",
+        "brand": "Sofia",
+        "price": 89000,
+        "oldPrice": 120000,
+        "discount": 26,
+        "rating": 4.9,
+        "reviews": 456,
+        "image": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=500&q=80",
+        "images": [
+          "https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=800&q=80",
+          "https://images.unsplash.com/photo-1631214524020-7e18db9a8f92?w=800&q=80"
+        ],
+        "description": "Long-lasting matte lipstick with rich color and comfortable wear. Available in 12 stunning shades.",
+        "colors": [
+          "#DC143C",
+          "#FF1493",
+          "#FF69B4",
+          "#FF6347",
+          "#B22222",
+          "#8B0000"
+        ],
+        "specs": {
+          "Finish": "Matte",
+          "Volume": "3.5g",
+          "Wear Time": "8+ hours",
+          "Formula": "Transfer-proof"
+        },
+        "inStock": true,
+        "isBestseller": true,
+        "quantity": 1
+      }
+    ],
+    "deliveryInfo": {
+      "name": "Azamatjon",
+      "phone": "+998938852241",
+      "address": "Столовая, Amir Temur shoh ko'chasi, Yunusabad district, Toshkent, 100000, Oʻzbekiston",
+      "city": "Toshkent",
+      "region": ""
+    },
+    "paymentMethod": "payme",
+    "total": 89000,
+    "status": "pending",
+    "_id": "ap7ul7kuh",
+    "createdAt": "2026-04-27T13:25:44.920Z",
+    "updatedAt": "2026-04-27T13:35:08.591Z"
+  }
+]

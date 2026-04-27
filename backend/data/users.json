@@ -1,0 +1,32 @@
+[
+  {
+    "_id": "5gos0pwoi",
+    "name": "Sofia SuperAdmin",
+    "email": "sofiasupperadmin@gmail.com",
+    "password": "$2a$12$fmQeprmZANWVqsrLgUrTx.XnMTmoh/DyeyqS/1zjdDTqkuZFby8N2",
+    "role": "super_admin",
+    "isVerified": true,
+    "createdAt": "2026-04-27T12:38:08.929Z",
+    "updatedAt": "2026-04-27T12:38:08.929Z"
+  },
+  {
+    "name": "Azamatjon",
+    "email": "karimovazamatjon231@gmail.com",
+    "password": "$2a$12$6evnEi41G1aFNcXvhlB7Rey.hIWj6dU.idTmq5.ycs/Nab7GMYJQS",
+    "provider": "local",
+    "_id": "950jlf61j",
+    "createdAt": "2026-04-27T12:59:25.930Z",
+    "updatedAt": "2026-04-27T12:59:43.702Z",
+    "isVerified": true
+  },
+  {
+    "name": "Karimov",
+    "email": "karimovazamatjon51@gmail.com",
+    "password": "$2a$12$O5q6F0gywG5qqVROe1rm5eVbPIKHPm0Dfcx/mLgrN81x3rTUZJ2/K",
+    "provider": "local",
+    "_id": "thuaz8aqy",
+    "createdAt": "2026-04-27T13:41:07.769Z",
+    "updatedAt": "2026-04-27T13:41:27.333Z",
+    "isVerified": true
+  }
+]
