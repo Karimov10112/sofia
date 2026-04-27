@@ -30,7 +30,8 @@ export const AdminLayout: React.FC = () => {
   React.useEffect(() => {
     if (!user || (user.role !== 'admin' && user.role !== 'super_admin')) return;
 
-    const socket = io('http://localhost:5002', { withCredentials: true });
+    const baseUrl = window.location.hostname === 'localhost' ? 'http://localhost:5002' : '';
+    const socket = io(baseUrl, { withCredentials: true });
 
     socket.on('connect', () => {
       socket.emit('joinAdmin');
