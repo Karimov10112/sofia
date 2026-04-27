@@ -82,26 +82,19 @@ app.use((err, req, res, next) => {
 });
 
 // ─── Start ────────────────────────────────────────────────────────────────────
-server.listen(PORT, () => {
-  console.log(`
+if (process.env.NODE_ENV !== 'production' || !process.env.VERCEL) {
+  const PORT = process.env.PORT || 5002;
+  server.listen(PORT, () => {
+    console.log(`
 ╔══════════════════════════════════════════╗
 ║       Sofia Shop Backend Running         ║
 ╠══════════════════════════════════════════╣
 ║  URL:  http://localhost:${PORT}             ║
-║  Mode: ${process.env.NODE_ENV || 'development'}                    ║
+║  Mode: ${process.env.NODE_ENV || 'development'}             ║
 ╚══════════════════════════════════════════╝
-  `);
-  console.log('📌 Endpoints:');
-  console.log('   POST /api/auth/register');
-  console.log('   POST /api/auth/login');
-  console.log('   GET  /api/auth/google');
-  console.log('   GET  /api/auth/me');
-  console.log('   GET  /api/products');
-  console.log('   GET  /api/orders');
-  console.log('   GET  /api/admin/users');
-  console.log('   GET  /api/admin/stats');
-  console.log('   GET  /api/health');
-});
+    `);
+  });
+}
 
 module.exports = app;
 
