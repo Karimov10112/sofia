@@ -2,16 +2,24 @@ const fs = require('fs');
 const path = require('path');
 
 const DB_PATH = path.join(__dirname, '..', 'data');
-if (!fs.existsSync(DB_PATH)) {
-  fs.mkdirSync(DB_PATH);
+try {
+  if (!fs.existsSync(DB_PATH)) {
+    fs.mkdirSync(DB_PATH);
+  }
+} catch (e) {
+  console.warn('Could not create data directory, possibly read-only environment:', e.message);
 }
 
 class MockDB {
   constructor(collection) {
     this.collection = collection;
     this.filePath = path.join(DB_PATH, `${collection}.json`);
-    if (!fs.existsSync(this.filePath)) {
-      fs.writeFileSync(this.filePath, JSON.stringify([]));
+    try {
+      if (!fs.existsSync(this.filePath)) {
+        fs.writeFileSync(this.filePath, JSON.stringify([]));
+      }
+    } catch (e) {
+      console.warn(`Could not create ${collection}.json, possibly read-only environment:`, e.message);
     }
   }
 
