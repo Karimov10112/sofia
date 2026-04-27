@@ -1,4 +1,6 @@
-const BASE_URL = 'http://localhost:5002/api';
+const BASE_URL = window.location.hostname === 'localhost' 
+  ? 'http://localhost:5002/api' 
+  : '/api';
 
 export const apiFetch = async (endpoint: string, options: RequestInit = {}) => {
   const token = localStorage.getItem('sofia-token');
