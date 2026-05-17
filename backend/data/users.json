@@ -1,0 +1,12 @@
+[
+  {
+    "_id": "5gos0pwoi",
+    "name": "Sofia SuperAdmin",
+    "email": "sofiasupperadmin@gmail.com",
+    "password": "$2a$12$fmQeprmZANWVqsrLgUrTx.XnMTmoh/DyeyqS/1zjdDTqkuZFby8N2",
+    "role": "super_admin",
+    "isVerified": true,
+    "createdAt": "2026-04-27T12:38:08.929Z",
+    "updatedAt": "2026-04-27T12:38:08.929Z"
+  }
+]

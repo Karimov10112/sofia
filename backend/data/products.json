@@ -1,0 +1,81 @@
+[
+  {
+    "_id": "s1",
+    "name": "iPhone 15 Pro Max",
+    "category": "smartphone",
+    "brand": "Apple",
+    "price": 15900000,
+    "originalPrice": 17500000,
+    "image": "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=500&q=80",
+    "description": "The ultimate iPhone with titanium design.",
+    "stock": 25,
+    "isBestseller": true,
+    "isLatest": true,
+    "updatedAt": "2026-04-27T12:58:01.542Z"
+  },
+  {
+    "_id": "s2",
+    "name": "Samsung Galaxy S24 Ultra",
+    "category": "smartphone",
+    "brand": "Samsung",
+    "price": 14200000,
+    "originalPrice": 15900000,
+    "image": "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=500&q=80",
+    "description": "Flagship Android phone with S Pen.",
+    "stock": 30,
+    "isBestseller": true,
+    "isLatest": false
+  },
+  {
+    "_id": "s3",
+    "name": "Xiaomi 14 Pro",
+    "category": "smartphone",
+    "brand": "Xiaomi",
+    "price": 7900000,
+    "originalPrice": 9500000,
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500&q=80",
+    "description": "Powerful performance with Leica camera system.",
+    "stock": 45,
+    "isBestseller": false,
+    "isLatest": true
+  },
+  {
+    "_id": "s4",
+    "name": "Google Pixel 8 Pro",
+    "category": "smartphone",
+    "brand": "Google",
+    "price": 11900000,
+    "originalPrice": 13500000,
+    "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=500&q=80",
+    "description": "Best-in-class AI photography and pure Android.",
+    "stock": 15,
+    "isBestseller": false,
+    "isLatest": false
+  },
+  {
+    "_id": "s5",
+    "name": "OnePlus 12",
+    "category": "smartphone",
+    "brand": "OnePlus",
+    "price": 8500000,
+    "originalPrice": 10200000,
+    "image": "https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=500&q=80",
+    "description": "Flagship killer with Hasselblad camera.",
+    "stock": 35,
+    "isBestseller": false,
+    "isLatest": false
+  },
+  {
+    "_id": "s6",
+    "name": "iPhone 14",
+    "category": "smartphone",
+    "brand": "Apple",
+    "price": 9900000,
+    "originalPrice": 11500000,
+    "image": "https://images.unsplash.com/photo-1678652197950-eb62f8e5c3cf?w=500&q=80",
+    "description": "Reliable performance with A15 Bionic chip.",
+    "stock": 55,
+    "isBestseller": false,
+    "isLatest": false
+  }
+]
