@@ -4,6 +4,7 @@ import { Search, ShoppingCart, Heart, User, Moon, Sun, Menu, X } from 'lucide-re
 import { useStore } from '../context/StoreContext';
 import { useTranslation } from '../utils/translations';
 import { products } from '../data/products';
+import { UserMenu } from './UserMenu';
 
 export const Navbar: React.FC = () => {
   const { cartCount, wishlist, language, setLanguage, darkMode, toggleDarkMode, user, logoutUser } = useStore();
@@ -145,57 +146,8 @@ export const Navbar: React.FC = () => {
             </Link>
 
             {/* Profile */}
-            <div className="relative">
-              <button
-                onClick={() => user ? setProfileMenuOpen(!profileMenuOpen) : window.location.href = '/login'}
-                className="hidden md:flex p-2 rounded-full hover:bg-accent/10 transition-colors"
-                aria-label="Profile"
-              >
-                <User className="w-5 h-5" />
-              </button>
-
-                {profileMenuOpen && user && (
-                  <div
-                    className="absolute right-0 mt-2 w-48 bg-card rounded-2xl shadow-xl border border-border py-2"
-                  >
-                    <div className="px-4 py-2 border-b border-border">
-                      <p className="font-semibold text-sm truncate">{user.name}</p>
-                      <p className="text-xs text-muted-foreground truncate">{user.email}</p>
-                    </div>
-                    <Link
-                      to="/my-orders"
-                      onClick={() => setProfileMenuOpen(false)}
-                      className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10"
-                    >
-                      {language === 'uz' ? 'Mening buyurtmalarim' : language === 'ru' ? 'Мои заказы' : 'My Orders'}
-                    </Link>
-                    <Link
-                      to="/profile"
-                      onClick={() => setProfileMenuOpen(false)}
-                      className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10"
-                    >
-                      {language === 'uz' ? 'Profil' : language === 'ru' ? 'Профиль' : 'Profile'}
-                    </Link>
-                    {user.role !== 'user' && (
-                      <Link
-                        to="/admin"
-                        onClick={() => setProfileMenuOpen(false)}
-                        className="block px-4 py-2 text-sm text-foreground hover:bg-accent/10"
-                      >
-                        {language === 'uz' ? 'Admin Panel' : 'Admin Panel'}
-                      </Link>
-                    )}
-                    <button
-                      onClick={() => {
-                        logoutUser();
-                        setProfileMenuOpen(false);
-                      }}
-                      className="w-full text-left px-4 py-2 text-sm text-red-500 hover:bg-red-500/10"
-                    >
-                      {language === 'uz' ? 'Chiqish' : language === 'ru' ? 'Выйти' : 'Logout'}
-                    </button>
-                  </div>
-                )}
+            <div className="hidden md:block">
+              <UserMenu />
             </div>
 
             {/* Mobile Menu Toggle */}

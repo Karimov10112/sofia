@@ -83,10 +83,17 @@ export const UserMenu: React.FC = () => {
                 <Heart className="w-4 h-4 text-secondary" />
                 <span>{l.wishlist}</span>
               </Link>
+              {user && (user.role === 'admin' || user.role === 'super_admin') && (
+                <Link to="/admin" onClick={() => setOpen(false)}
+                  className="flex items-center gap-3 px-4 py-2.5 text-sm hover:bg-accent/10 transition-colors">
+                  <User className="w-4 h-4 text-primary" />
+                  <span>Admin Panel</span>
+                </Link>
+              )}
             </div>
             <div className="py-1 border-t border-border">
               <button
-                onClick={() => { logoutUser(); setOpen(false); navigate('/'); }}
+                onClick={() => { logoutUser(); setOpen(false); navigate('/login'); }}
                 className="flex items-center gap-3 px-4 py-2.5 text-sm text-destructive hover:bg-destructive/10 w-full transition-colors"
               >
                 <LogOut className="w-4 h-4" />

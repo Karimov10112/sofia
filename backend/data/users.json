@@ -3,7 +3,7 @@
     "_id": "5gos0pwoi",
     "name": "Sofia SuperAdmin",
     "email": "sofiasupperadmin@gmail.com",
-    "password": "$2a$12$fmQeprmZANWVqsrLgUrTx.XnMTmoh/DyeyqS/1zjdDTqkuZFby8N2",
+    "password": "$2a$10$n6pBvM5LigqG7F6o16hReO3bD7AEYQtYaQZtBLiLuVHt49bWCh/ou",
     "role": "super_admin",
     "isVerified": true,
     "createdAt": "2026-04-27T12:38:08.929Z",
